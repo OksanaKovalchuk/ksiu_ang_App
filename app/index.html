@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en" ng-app="myApp">
+<head>
+  <meta charset="utf-8">
+  <title>Артнепінг</title>
+  <link rel="stylesheet" href="app.css" />
+  <script src="bower_components/angular/angular.js"></script>
+  <script src="bower_components/angular-route/angular-route.js"></script>
+  <script src="app.module.js"></script>
+  <script src="app.config.js"></script>
+  <script src="partials/nav.module.js"></script>
+  <script src="partials/nav.component.js"></script>
+  <script src="partials/footer.module.js"></script>
+  <script src="partials/footer.component.js"></script>
+  <script src="partials/header.module.js"></script>
+  <script src="partials/header.component.js"></script>
+  <script src="partials/sidebar.module.js"></script>
+  <script src="partials/sidebar.component.js"></script>
+  <script src="pictures/pictures.component.js"></script>
+  <script src="pictures/pictures.module.js"></script>
+  <script src="pages/contact-form.module.js"></script>
+  <script src="pages/contact-form.component.js"></script>
+  <script src="pages/painters.module.js"></script>
+  <script src="pages/painters.component.js"></script>
+  <script src="pages/story.module.js"></script>
+  <script src="pages/story.component.js"></script>
+  <script src="pages/main.module.js"></script>
+  <script src="pages/main.component.js"></script>
+</head>
+<body>
+  <div id="main">
+    <header></header>
+      <div id="site_content">
+          <nav></nav>
+          <div ng-view></div>
+          <sidebar></sidebar>
+      </div>
+  </div>
+  <footer></footer>
+</body>
+</html>
+
+
+
