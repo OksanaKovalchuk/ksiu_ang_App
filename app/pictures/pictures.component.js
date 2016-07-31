@@ -9,9 +9,10 @@ angular.
 
 .controller('PictureController', function ($http) {
         var self = this;
+    self.orderProp = 'name';
 
         $http.get('http://work.com/picture-list').then(function(response) {
-
+            console.log(self.pictures);
             self.pictures= response.data;
         });
 });
